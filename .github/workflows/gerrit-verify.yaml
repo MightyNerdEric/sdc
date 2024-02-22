@@ -8,4 +8,5 @@ jobs:
   mvn-merge:
     uses: mightynerderic/releng-reusable-workflows/.github/workflows/compose-maven-merge.yaml@mvn-merge
     with:
-      MVN_PROFILES: "snapshots"
+      MVN_PROFILES: "docker"
+      MVN_POM_FILE: "asdctool/pom.xml"
